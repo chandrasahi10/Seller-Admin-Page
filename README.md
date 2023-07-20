@@ -12,7 +12,7 @@ Here are the features of the project described in bullet points:
 - Utilize JavaScript to handle user interactions and manipulate the data.
 - Provide a user-friendly experience for adding, viewing, and managing items efficiently.
 
-### My learning through this project :
+### My learning in this project :
 
 This project has been instrumental in solidifying my knowledge and understanding of basic HTML, CSS, and JavaScript. Through hands-on implementation, I have gained valuable insights into web development concepts, including data handling, interactivity, and user interface design. By incorporating a REST API, I have learned how to connect front-end functionalities with server-side data, providing a more comprehensive understanding of the web development ecosystem.
 
