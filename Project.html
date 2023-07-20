@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Admin Page</title>
+
+    <!-- Internal CSS -->
+   
+   <style>
+        .admin{
+            font-family: "Garamond", Times, serif;
+            margin-top: 60px;
+            text-align: center;
+            border: solid black 5px;
+            background-image: url('image2.avif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            border-radius: 16px;
+        }
+        #Price{
+            border: solid black 3px;
+            border-radius: 4px;
+            height: 20px;
+            width: 200px;
+        }
+
+        #Name{
+            border: solid black 3px;
+            border-radius: 4px;
+            height: 20px;
+            width: 200px
+        }
+
+        #Categ{
+            border: solid black 3px;
+            border-radius: 4px;
+            height: 28px;
+            width: 200px;
+        }
+
+        #But{
+            border: solid black 3px;
+            border-radius: 6px;
+            height: 30px;
+            width: 160px;
+            background-color:lightslategray; 
+        }
+
+        #But:active {
+            transform: scale(0.98);
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+
+        #But:hover{
+            background-color: darkgray;
+        }
+
+        .hr{
+            color:black;
+            height: 2px;
+            background-color: black;
+        }
+
+        .hr1{
+            color:black;
+            height: 0.6px;
+            background-color: black;
+
+        }
+</style>
+
+</head>
+<body style="background-color: #4992ea;">
+    <div class="admin">
+    <strong><h1>Seller Admin Page</h1></strong>
+    <hr class="hr">
+    <h3>Price</h3><input type="number" class="test" id="Price" placeholder="Price"><br>
+    <h3>Item-Name</h3><input type="text" id="Name" placeholder="Item-Name">
+    <h3>Choose Category</h3><select id="Categ" name="Category">
+        <option value="Electronics">Electronics</option>
+        <option value="Skin-Care">Skin-Care</option>
+        <option value="Food">Food</option>
+    </select><br><br><br>
+    <button id="But" type="button" onclick="test()"><strong>Add Product</strong></button>
+    <br>
+    <br>
+    <hr class="hr">
+    <h4>Electronics
+    <ul id="Electronics" class="list-group"></ul>
+    </h4>
+    <hr class="hr1">
+    <h4>Skin-Care
+    <ul id="Skin-Care" class="list-group"></ul>
+    </h4>
+    <hr class="hr1">
+    <h4>Food
+    <ul id="Food" class="list-group"></ul>
+    </h4>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="Project.js"></script>
+    
+</body>
+</html>
+
